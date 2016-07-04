@@ -1,0 +1,68 @@
+/* reset*/
+
+h1 {color: red;}
+
+
+body 
+{
+/*	position: relative;*/
+	text-align: center;
+
+}
+
+
+
+
+/* normal*/
+
+.wrapper
+{
+	max-width: 960px;
+	min-width: 735px;
+
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+.row {
+
+	display: block;
+	clear: both;
+	margin-bottom: 1.6em;
+}
+
+.col {
+	padding: 0 15px;
+}
+
+
+#header {
+
+	height: auto;
+	overflow: visible;
+}
+
+
+#toolsOuterContainer {
+
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 0; /* ???? */
+	z-index: 100;
+
+}
+
+
+#tools {
+
+	float: right;
+
+	color: #666;	
+	position: relative;
+
+}
+
