@@ -1,0 +1,13 @@
+Nginx报错sched_setaffinity() failed
+==============================================================
+
+
+4核CPU的设置
+
+
+
+worker_processes 4;
+worker_cpu_affinity 00000001 00000010 00000100 00001000;
+
+
+
