@@ -14,9 +14,24 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2F
 yum localinstall jdk-8u131-linux-x64.rpm
 
 
-Now Java should be installed at /usr/java/jdk1.8.0_60/jre/bin/java, and linked from /usr/bin/java.
+Now Java should be installed at /usr/java/jdk1.8.0_131/jre/bin/java, and linked from /usr/bin/java.
 
 
 ## 3. Delete the archive file
 
 rm ~/jdk-8u131-linux-x64.rpm
+
+
+## 4. Configuring Environment Variables
+
+<pre><code>
+sudo sh -c "echo export JAVA_HOME=/usr/java/jdk1.8.0_131/jre >> /etc/environment"
+</pre></code>
+
+## 5. Using Alternatives (可选) 
+
+如果有多个java程序，选择一个
+
+<pre><code>
+alternatives --config java
+</pre></code>
